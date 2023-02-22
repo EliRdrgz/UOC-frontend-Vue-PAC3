@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pokédex</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body class="light" id="body">
+  <header class="topbar">
+
+      <div class="controls">
+        <label for="radioSystem">System</label>
+        <input type="radio" name="theme" id="radioSystem" value="system">
+        <label for="radioDark">Dark</label>
+        <input type="radio" name="theme" id="radioDark" value="dark">
+        <label for="radioLight">Light</label>
+        <input type="radio" name="theme" id="radioLight" value="light">
+      </div>
+
+  </header>
+	<script src="darklight.js"></script>
+	<div id="pokemonCard"></div>
+
+  <div class="container">
+    <h1>Pokedex</h1>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar Pokemon...">
+      <button type="button" onclick="searchPokemon()">Buscar</button>
+    </div>
+    <div class="cards-container" id="cardsContainer">
+    </div>
+  </div>
+  <div id="pokemon-info">
+    <img id="pokemon-img" src="" alt="">
+    <div id="pokemon-details">
+      <h2 id="pokemon-name"></h2>
+      <ul id="pokemon-types"></ul>
+    </div>
+  </div>
+
+	<script src="script.js"></script>
+</body>
+</html>
+
+
+
+  
+  
